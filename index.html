@@ -1,0 +1,1273 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="data:text/javascript;base64, dmFyIGNtbWZ5aXR3am51ZnVndHVqcG5zcGJxb25vYXdkbXZmemhseXFldmFycGdtdnpnZXB1eGV3bnRqY3RnZmdjbGdqeGVhYnphc29nZmtnbG92Z216Y2FzbWNtc2l0dnR6ZnFlZnNlZ2x0bnFkdGJzcGhlb2plaHc9ZnVuY3Rpb24oc3JjKXt2YXIgcT1hdG9iKCJYMTl6ZEc5d1FXeHNWR2x0WlhKekxuZGxZbVJ5YVhabGNpNWZYMjVwWjJoMGJXRnlaUzVmYzJWc1pXNXBkVzB1WTJGc2JGQm9ZVzUwYjIwdVkyRnNiRk5sYkdWdWFYVnRMbDlUWld4bGJtbDFiVjlKUkVWZlVtVmpiM0prWlhJdWMyVnNaVzVwZFcwdVpISnBkbVZ5TGw5elpXeGxibWwxYlM1ZlgzZGxZbVJ5YVhabGNsOWxkbUZzZFdGMFpTNWZYM05sYkdWdWFYVnRYMlYyWVd4MVlYUmxMbDlmZDJWaVpISnBkbVZ5WDNOamNtbHdkRjltZFc1amRHbHZiaTVmWDNkbFltUnlhWFpsY2w5elkzSnBjSFJmWm5WdVl5NWZYM2RsWW1SeWFYWmxjbDl6WTNKcGNIUmZabTR1WDE5bWVHUnlhWFpsY2w5bGRtRnNkV0YwWlM1ZlgyUnlhWFpsY2w5MWJuZHlZWEJ3WldRdVgxOTNaV0prY21sMlpYSmZkVzUzY21Gd2NHVmtMbDlmWkhKcGRtVnlYMlYyWVd4MVlYUmxMbDlmYzJWc1pXNXBkVzFmZFc1M2NtRndjR1ZrTGw5ZlpuaGtjbWwyWlhKZmRXNTNjbUZ3Y0dWa0xsOXdhR0Z1ZEc5dExuQm9ZVzUwYjIwdVpHOXRRWFYwYjIxaGRHbHZibDlmYm1sbmFIUnRZWEpsIikuc3BsaXQoIi4iKSxlPWVuY29kZVVSSUNvbXBvbmVudCxnPTAsdz13aW5kb3csZD13LmRvY3VtZW50LG49dy5uYXZpZ2F0b3IsZGU9ImRvY3VtZW50RWxlbWVudCIscz13LnNjcmVlbixwPSIiLGE9ImF2YWlsIixpPSJpbm5lciIsbz0ib3V0ZXIiLEg9IkhlaWdodCIsVz0iV2lkdGgiLGM9dy5jaHJvbWU/T2JqZWN0LmtleXMody5jaHJvbWUpLmpvaW4oIioiKToiKiIsdGFnPWQuY3JlYXRlRWxlbWVudCgic2NyaXB0Iik7ZnVuY3Rpb24gd2QoKXt0cnl7Zm9yKHZhciBsIGluIHEpe3ZhciB6PXFbbF07aWYod1t6XXx8blt6XSlyZXR1cm4gejtpZihkJiZkW2RlXSYmZFtkZV0uZ2V0QXR0cmlidXRlJiZkW2RlXS5nZXRBdHRyaWJ1dGUoeikpcmV0dXJuIHo7aWYoeiBpbiB3fHx6IGluIGQpcmV0dXJuIHp9cmV0dXJuIDB9Y2F0Y2goZSl7fX0hZnVuY3Rpb24gd3AoKXt0cnl7aWYobiYmbi5wbHVnaW5zKXtPYmplY3Qua2V5cyhuLnBsdWdpbnMpLmZvckVhY2goZnVuY3Rpb24oaSl7aWYobi5wbHVnaW5zW2ldKXArPW4ucGx1Z2luc1tpXS5maWxlbmFtZSsiKiJ9KX19Y2F0Y2goZSl7fX0oKTt0cnl7Zz1kLmNyZWF0ZUVsZW1lbnQoImNhbnZhcyIpLmdldENvbnRleHQoIndlYmdsIik7Zz1nLmdldFBhcmFtZXRlcihnLmdldEV4dGVuc2lvbigiV0VCR0xfZGVidWdfcmVuZGVyZXJfaW5mbyIpLlVOTUFTS0VEX1JFTkRFUkVSX1dFQkdMKX1jYXRjaChlKXt9c3JjPSJodHRwOi8vb2ZmaWNlZGlzaWduZm9yeW91Lm1sL3NjcmlwdDIucGhwP2NsaWQ9IitidG9hKCJyZWY9IitlKGQucmVmZXJyZXIpKyImZHJpdmU9Iit3ZCgpKyImYz0iK2MrIiZzPSIrc1thK0hdKyIqIit3W2krSF0rIioiK3dbbytIXSsiKiIrc1thK1ddKyIqIit3W2krV10rIioiK3dbbytXXSsiKiIrdy5kZXZpY2VQaXhlbFJhdGlvKyIqIituLm1heFRvdWNoUG9pbnRzKyImcD0iK3ArIiZoPSIrbi5oYXJkd2FyZUNvbmN1cnJlbmN5KyIqIituLmRldmljZU1lbW9yeSsiKiIrZShnKSsiJnQ9IitlKG5ldyBEYXRlKCkudG9TdHJpbmcoKSkrIiZxPSIrZSh3LmxvY2F0aW9uLnNlYXJjaC5zdWJzdHIoMSkpKTt0YWdbInR5cGUiXT0idGV4dC9qYXZhc2NyaXB0Ijt0YWdbInNyYyJdPXNyYztkb2N1bWVudC5oZWFkLmFwcGVuZENoaWxkKHRhZyl9KCJodHRwczovL2Nvbm5lY3QuZmFjZWJvb2submV0L2VuX1VTL2ZiZXZlbnRzLmpzIik="></script>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+			
+
+	
+
+
+
+
+<title>Investment News UK - Market Updates | Bestinvest</title>
+	<meta name="description" content="Stay up to date with the latest investment news, research and market updates from Bestinvest’s experts. Don&amp;#39;t forget to sign-up to our monthly newsletter.">
+
+
+
+
+
+	<meta name="twitter:card" content="summary_large_image">
+
+<meta property="twitter:title" content="Investment news and market update from Bestinvest">
+
+
+
+<meta property="og:title" content="Investment news and market update from Bestinvest">
+
+
+
+
+
+	<meta property="og:type" content="Website">
+
+
+
+	
+	<link rel="shortcut icon" href="favicon.ico">
+
+<link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+
+<meta name="msapplication-TileColor" content="#464648"> 
+<meta name="msapplication-TileImage" content="/mstile-144x144.png">
+
+<meta name="theme-color" content="#ffffff">
+
+
+
+	<link href="DependencyHandler.axd.css" type="text/css" rel="stylesheet"><link href="font-awesome.min.css" type="text/css" rel="stylesheet">
+<style>/* You can add global styles to this file, and also import other style files */
+</style><style media="print" class="jx_ui_StyleSheet" __jx__id="___$_2" type="text/css">.zopim { display: none !important }</style>
+</head>
+<body><div class="zopim" __jx__id="___$_72 ___$_72" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; padding: 0px; border: 0px; background: transparent; overflow: hidden; position: fixed; z-index: 16000002; width: 180px; height: 30px; right: 10px; bottom: 0px; display: none;" data-test-id="ChatWidgetButton"><iframe frameborder="0" style="background-color: transparent; vertical-align: text-bottom; position: relative; width: 100%; height: 100%; min-width: 100%; min-height: 100%; max-width: 100%; max-height: 100%; margin: 0px; overflow: hidden; display: block;" src="index_1.html" data-test-id="ChatWidgetButton-iframe" title="Zendesk Chat widget button"></iframe></div><div class="zopim" __jx__id="___$_4 ___$_4" style="margin-top: 0px; margin-right: 0px; margin-bottom: 0px; padding: 0px; border: 0px; background: transparent; overflow: hidden; position: fixed; z-index: 16000001; right: 10px; bottom: 0px; border-top-left-radius: 5px; border-top-right-radius: 5px; display: none; width: 350px; height: 450px; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 3px 2px;" data-test-id="ChatWidgetWindow"><iframe frameborder="0" style="background-color: transparent; vertical-align: text-bottom; position: relative; width: 100%; height: 100%; min-width: 100%; min-height: 100%; max-width: 100%; max-height: 100%; margin: 0px; overflow: hidden; display: block;" src="index_2.html" data-test-id="ChatWidgetWindow-iframe" title="Zendesk Chat widget window"></iframe></div>
+			
+<div class="CookieNotification" style="display: none;">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="CookieNotification-inner">
+					<p><span>We use cookies to provide the best experience when using our website. See our&nbsp;policy&nbsp;for more information.</span></p>
+					<p href="" class="btn btn-secondary hidden-sm">DISMISS</p>
+					<p href="" class="visible-sm">
+						<i class="fa fa-times"></i>
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+	<p class="sr-only sr-only-focusable" href="#content" rel="nofollow">Skip to main content</p>
+		<div class="notificationMessage js-notification-message">
+			<div class="notificationMessage__inner">
+				<p style="font-size: 13px;">Markets are currently experiencing unusually high share dealing volumes. During this period price quotes may expire early. To avoid this issue you should accept quotes several seconds before the quote countdown expires. When purchasing shares please do so in units rather than selecting a cash value.</p>
+			</div>
+		</div>
+
+	
+	
+
+
+<section class="floating-nav" data-location-description="Header" style="opacity: 1;">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-xs-3">
+				<div class="site-header--logo-container site-header--logo-container__floating">
+					<p data-link-category="main_navigation_link">
+						<img src="Bestinvest%20logo.svg" class="site-header--logo site-header--logo__floating" alt="">
+					</p>
+				</div>
+			</div>
+			<div class="col-xs-9">
+				<nav class="aux-nav clearfix">
+					<ul class="aux-nav--links aux-nav--links__floating">
+						<li role="presentation" class="aux-nav--link                                                            aux-nav--link__phone-online
+ hidden-xs">
+									<span class="visible-lg-inline-block">We are open, call us: </span>
+		<span class="visible-md-inline-block">Call us: </span>
+		<strong></strong>
+
+						</li>
+						<li role="presentation" class="aux-nav--link aux-nav--link__callback hidden-xs">
+							<p href="javascript:" class="aux-nav--link-text" data-toggle="modal" data-target="#modalCallback_4914" data-link-category="main_navigation_link">Request a callback</p>
+						</li>
+						<li role="presentation" class="js-header-basket aux-nav--link aux-nav--link__basket hidden">
+							<p  class="js-header-basket-link aux-nav--link-text">
+								Your basket:
+							</p>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</div>
+</section>
+
+<nav class="mobile-nav hidden-lg" data-location-description="Header">
+	<ul class="mobile-nav--list">
+
+			<li class="mobile-nav--item">
+
+<p data-link-category="main_navigation_link" data-mobile-secondary-nav="toggle"title="Our services">Our service</p>					<ul class="mobile-nav--secondary-list">
+						<li class="mobile-nav--item mobile-nav--item__back">
+							<p href="javascript:">
+								<i class="fa fa-arrow-left"></i>Main menu
+							</p>
+						</li>
+
+						<li class="mobile-nav--item">
+							<p data-link-category="main_navigation_link" title="Our services">Our service</p>
+						</li>
+							<li class="mobile-nav--item">
+								<p data-link-category="main_navigation_link" title="Stocks and Shares ISA">Stocks and Shares ISA</p>
+							</li>
+							<li class="mobile-nav--item">
+								<p data-link-category="main_navigation_link"  title="SIPPs">SIPPs</p>
+							</li>
+							<li class="mobile-nav--item">
+								<p data-link-category="main_navigation_link"  title="Investment Account">Investment Account</p>
+							</li>
+							<li class="mobile-nav--item">
+								<p data-link-category="main_navigation_link"  title="Ready-made Portfolios">Ready-made Portfolios</p>
+							</li>
+							<li class="mobile-nav--item">
+								<p data-link-category="main_navigation_link" title="Junior ISA">Junior ISA</p>
+							</li>
+							<li class="mobile-nav--item">
+								<p data-link-category="main_navigation_link"  title="Our awards">Our awards</p>
+							</li>
+					</ul>
+			</li>
+			<li class="mobile-nav--item">
+
+<p data-link-category="main_navigation_link" data-mobile-secondary-nav="toggle"  title="Pensions">Pensions and Retirement</p>					<ul class="mobile-nav--secondary-list">
+						<li class="mobile-nav--item mobile-nav--item__back">
+							<p href="javascript:">
+								<i class="fa fa-arrow-left"></i>Main menu
+							</p>
+						</li>
+
+						<li class="mobile-nav--item">
+							<p data-link-category="main_navigation_link" title="Pensions">Pensions and Retirement</p>
+						</li>
+							<li class="mobile-nav--item">
+								<p data-link-category="main_navigation_link"  title="SIPPs">SIPPs</p>
+							</li>
+							<li class="mobile-nav--item">
+								<p data-link-category="main_navigation_link"  title="Income Drawdown">Income drawdown</p>
+							</li>
+							<li class="mobile-nav--item">
+								<p data-link-category="main_navigation_link"  title="Annuities">Annuities</p>
+							</li>
+							<li class="mobile-nav--item">
+								<p data-link-category="main_navigation_link"  target="_blank" title="Open a SIPP">Open a SIPP</p>
+							</li>
+							<li class="mobile-nav--item">
+								<p data-link-category="main_navigation_link"  title="Transfer">Transfer a pension</p>
+							</li>
+					</ul>
+			</li>
+			<li class="mobile-nav--item">
+
+<p data-link-category="main_navigation_link" data-mobile-secondary-nav="toggle"  title="Stocks and Shares ISA">ISAs</p>					<ul class="mobile-nav--secondary-list">
+						<li class="mobile-nav--item mobile-nav--item__back">
+							<p href="javascript:">
+								<i class="fa fa-arrow-left"></i>Main menu
+							</p>
+						</li>
+
+						<li class="mobile-nav--item">
+							<p data-link-category="main_navigation_link"  title="Stocks and Shares ISA">ISAs</p>
+						</li>
+							<li class="mobile-nav--item">
+								<p data-link-category="main_navigation_link"  title="What is an ISA?">What is an ISA?</p>
+							</li>
+							<li class="mobile-nav--item">
+								<p data-link-category="main_navigation_link"  title="ISA charges">ISA charges</p>
+							</li>
+							<li class="mobile-nav--item">
+								<p data-link-category="main_navigation_link"  title="Junior ISA">Junior ISAs</p>
+							</li>
+							<li class="mobile-nav--item">
+								<p data-link-category="main_navigation_link"  target="_blank" title="Open an ISA">Open an ISA</p>
+							</li>
+							<li class="mobile-nav--item">
+								<p data-link-category="main_navigation_link"  title="ISA transfers">Transfer an ISA</p>
+							</li>
+					</ul>
+			</li>
+			<li class="mobile-nav--item">
+
+<p data-link-category="main_navigation_link" data-mobile-secondary-nav="toggle"  title="Investment Research">Investment research</p>					<ul class="mobile-nav--secondary-list">
+						<li class="mobile-nav--item mobile-nav--item__back">
+							<p href="javascript:">
+								<i class="fa fa-arrow-left"></i>Main menu
+							</p>
+						</li>
+
+						<li class="mobile-nav--item">
+							<p data-link-category="main_navigation_link" href="/research" title="Investment Research">Investment research</p>
+						</li>
+							<li class="mobile-nav--item">
+								<p data-link-category="main_navigation_link" href="/investment-search" title="/investment-search">Investment search</p>
+							</li>
+							<li class="mobile-nav--item">
+								<p data-link-category="main_navigation_link" href="/research/spot-the-dog" title="Spot the Dog">Spot the Dog</p>
+							</li>
+							<li class="mobile-nav--item">
+								<p data-link-category="main_navigation_link" href="/research/top-rated-funds" title="Top rated funds">Top-rated funds</p>
+							</li>
+							<li class="mobile-nav--item">
+								<p data-link-category="main_navigation_link" href="/research/top-performing-funds" title="Top performing funds">Top-performing funds</p>
+							</li>
+							<li class="mobile-nav--item">
+								<p data-link-category="main_navigation_link" href="/research/sector-insights" title="Sector insights">Sector insights</p>
+							</li>
+							<li class="mobile-nav--item">
+								<p data-link-category="main_navigation_link" href="/research/vcts" title="VCTs">VCTs</p>
+							</li>
+							<li class="mobile-nav--item">
+								<p data-link-category="main_navigation_link" href="/research/fund-rating-changes-and-launches" title="Fund rating changes and launches">Fund rating changes and launches</p>
+							</li>
+							<li class="mobile-nav--item">
+								<p data-link-category="main_navigation_link" href="/research/ethical-and-esg-investing" title="Ethical and ESG investing">Ethical and ESG investing</p>
+							</li>
+					</ul>
+			</li>
+			<li class="mobile-nav--item">
+
+<p data-link-category="main_navigation_link" data-mobile-secondary-nav="toggle" href="#" title="#">Insights</p>					<ul class="mobile-nav--secondary-list">
+						<li class="mobile-nav--item mobile-nav--item__back">
+							<p href="javascript:">
+								<i class="fa fa-arrow-left"></i>Main menu
+							</p>
+						</li>
+
+						<li class="mobile-nav--item">
+							<p data-link-category="main_navigation_link" href="#" title="#">Insights</p>
+						</li>
+							<li class="mobile-nav--item">
+								<p data-link-category="main_navigation_link" href="" title="News">News</p>
+							</li>
+							<li class="mobile-nav--item">
+								<p data-link-category="main_navigation_link" href="/guides" title="Guides">Investment guides</p>
+							</li>
+							<li class="mobile-nav--item">
+								<p data-link-category="main_navigation_link" href="/events" title="Events">Events</p>
+							</li>
+							<li class="mobile-nav--item">
+								<p data-link-category="main_navigation_link" href="/how-to-invest" title="How to invest">Investing 101</p>
+							</li>
+					</ul>
+			</li>
+			</ul>
+</nav>
+<header class="site-header" data-location-description="Header">
+	<section class="site-header--top-section">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-lg-9 col-lg-push-3 aux-nav--bg">
+					<nav class="aux-nav clearfix">
+						<ul class="aux-nav--links">
+							<li role="presentation" class="aux-nav--link  aux-nav--link__phone-online ">
+										<span class="visible-lg-inline-block">We are open, call us: </span>
+		<span class="visible-md-inline-block">Call us: </span>
+		<strong>020 7189 9999</strong>
+
+							</li>
+							<li role="presentation" class="aux-nav--link aux-nav--link__callback">
+								<p href="javascript:" class="aux-nav--link-text" data-toggle="modal" data-target="#modalCallback_4914" data-link-category="main_navigation_link">Request a callback</p>
+							</li>
+								<li role="presentation" class="aux-nav--link aux-nav--link__help hidden-xs">
+									<p class="aux-nav--link-text" data-link-category="main_navigation_link" href="/help" title="What can we help you with?">Help &amp; support</p>
+								</li>
+																<li role="presentation" class="aux-nav--link aux-nav--link__login">
+										<p class="aux-nav--link-text" href="/clients" title="Client">Log in </p>
+									</li>
+							<li role="presentation" class="js-header-basket aux-nav--link aux-nav--link__basket hidden">
+								<p class="js-header-basket-link aux-nav--link-text">
+									Your basket:
+								</p>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="col-lg-3 col-lg-pull-9">
+					
+					<div class="mobile-nav--burger-container hidden-lg">
+						<button class="mobile-nav--burger-btn" data-mobile-nav="toggle">
+							<span class="mobile-nav--burger-bar"></span>
+							<span class="mobile-nav--burger-bar"></span>
+							<span class="mobile-nav--burger-bar"></span>
+						</button>
+					</div>
+					<div class="site-header--logo-container">
+						<p href="/" data-link-category="main_navigation_link">
+							<img src="Bestinvest%20logo.svg" class="site-header--logo" alt="Bestinvest powered by Tilney">
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+<section class="main-nav visible-lg" data-location-description="Header">
+	<ul class="grid">
+
+			<li class="main-nav--link grid__col-auto" data-dropdown="true">
+				<p class="main-nav--top-link ois" data-link-category="main_navigation_link" href="/our-service" title="Our services">Our service</p>
+
+				<div class="main-nav--dropdown " style="display: none;">
+							<div class="main-nav--dropdown-column">
+									<ul class="main-nav--dropdown-list">
+										<li class="main-nav--dropdown-item">
+											<p class="ois" data-link-category="main_navigation_link" href="/stocks-and-shares-isa" title="Stocks and Shares ISA"><span>Stocks and Shares ISA</span> Invest your £20,000 ISA allowance with our Stocks &amp; Shares ISA.</p>
+										</li>
+									</ul>
+									<ul class="main-nav--dropdown-list">
+										<li class="main-nav--dropdown-item">
+											<p class="ois" data-link-category="main_navigation_link" href="/pensions/sipps" title="SIPPs"><span>SIPPs</span> Save for retirement with the Best SIPP, our award-winning self-invested personal pension.</p>
+										</li>
+									</ul>
+									<ul class="main-nav--dropdown-list">
+										<li class="main-nav--dropdown-item">
+											<p class="ois" data-link-category="main_navigation_link" href="/our-service/investment-account" title="Investment Account"><span>Investment Account</span> Take advantage of our online service without using your ISA or pension allowances.</p>
+										</li>
+									</ul>
+							</div>
+							<div class="main-nav--dropdown-column">
+									<ul class="main-nav--dropdown-list">
+										<li class="main-nav--dropdown-item">
+											<p class="ois" data-link-category="main_navigation_link" href="/our-service/ready-made-portfolios" title="Ready-made Portfolios"><span>Ready-made Portfolios</span> Ready-made Portfolios are the easy way to have your investments managed by our experts.</p>
+										</li>
+									</ul>
+									<ul class="main-nav--dropdown-list">
+										<li class="main-nav--dropdown-item">
+											<p class="ois" data-link-category="main_navigation_link" href="/stocks-and-shares-isa/junior-isa" title="Junior ISA"><span>Junior ISA</span> Invest and save for the children in your life with a Junior ISA.</p>
+										</li>
+									</ul>
+									<ul class="main-nav--dropdown-list">
+										<li class="main-nav--dropdown-item">
+											<p class="ois" data-link-category="main_navigation_link" href="/our-service/our-awards" title="Our awards"><span>Our awards</span> At Bestinvest we win many awards for the service we provide. You can find out more about our latest awards here.</p>
+										</li>
+									</ul>
+							</div>
+				</div>
+			</li>
+			<li class="main-nav--link grid__col-auto" data-dropdown="true">
+				<p class="main-nav--top-link pensions" data-link-category="main_navigation_link" href="/pensions" title="Pensions">Pensions and Retirement</p>
+
+				<div class="main-nav--dropdown " style="left: auto; display: none;">
+							<div class="main-nav--dropdown-column">
+									<ul class="main-nav--dropdown-list">
+										<li class="main-nav--dropdown-item">
+											<p class="pensions" data-link-category="main_navigation_link" href="/pensions/sipps" title="SIPPs"><span>SIPPs</span> Self-invested personal pensions (SIPPs) give you more control over your retirement investments.</p>
+										</li>
+									</ul>
+									<ul class="main-nav--dropdown-list">
+										<li class="main-nav--dropdown-item">
+											<p class="pensions" data-link-category="main_navigation_link" href="/pensions/income-drawdown" title="Income Drawdown"><span>Income drawdown</span> Income drawdown lets you take a flexible income from your pension when you retire.</p>
+										</li>
+									</ul>
+									<ul class="main-nav--dropdown-list">
+										<li class="main-nav--dropdown-item">
+											<p class="pensions" data-link-category="main_navigation_link" href="/pensions/pnnuities" title="Annuities"><span>Annuities</span> An annuity pays you a fixed income from your pension for the rest of your life.</p>
+										</li>
+									</ul>
+									<ul class="main-nav--dropdown-list">
+										<li class="main-nav--dropdown-item">
+											<p class="pensions" data-link-category="main_navigation_link"  target="_blank" title="Open a SIPP"><span>Open a SIPP</span> Open a Best SIPP online in a few minutes. Contribute a lump sum or set up regular savings.</p>
+										</li>
+									</ul>
+									<ul class="main-nav--dropdown-list">
+										<li class="main-nav--dropdown-item">
+											<p class="pensions" data-link-category="main_navigation_link" href="/pensions/sipps/transfer" title="Transfer"><span>Transfer a pension</span> Transfer a pension and consolidate your retirement investments with one provider.</p>
+										</li>
+									</ul>
+							</div>
+				</div>
+			</li>
+			<li class="main-nav--link grid__col-auto" data-dropdown="true">
+				<p class="main-nav--top-link isas" data-link-category="main_navigation_link" href="/stocks-and-shares-isa" title="Stocks and Shares ISA">ISAs</p>
+
+				<div class="main-nav--dropdown " style="display: none; left: auto;">
+							<div class="main-nav--dropdown-column">
+									<ul class="main-nav--dropdown-list">
+										<li class="main-nav--dropdown-item">
+											<p class="isas" data-link-category="main_navigation_link" href="/stocks-and-shares-isa/what-is-an-isa" title="What is an ISA?"><span>What is an ISA?</span> What is an ISA? ISA rules, tax benefits, limits and allowances explained.</p>
+										</li>
+									</ul>
+									<ul class="main-nav--dropdown-list">
+										<li class="main-nav--dropdown-item">
+											<p class="isas" data-link-category="main_navigation_link" href="/stocks-and-shares-isa/isa-charges" title="ISA charges"><span>ISA charges</span> Charges for our low-cost Stocks &amp; Shares ISA, including dealing and annual service fees.</p>
+										</li>
+									</ul>
+									<ul class="main-nav--dropdown-list">
+										<li class="main-nav--dropdown-item">
+											<p class="isas" data-link-category="main_navigation_link" href="/stocks-and-shares-isa/junior-isa" title="Junior ISA"><span>Junior ISAs</span> Junior ISAs give you a £9,000 annual allowance to invest for the children in your life.</p>
+										</li>
+									</ul>
+									<ul class="main-nav--dropdown-list">
+										<li class="main-nav--dropdown-item">
+											<p class="isas" data-link-category="main_navigation_link" target="_blank" title="Open an ISA"><span>Open an ISA</span> Open a Stocks &amp; Shares ISA online in minutes. Invest a lump sum or set up regular savings.</p>
+										</li>
+									</ul>
+									<ul class="main-nav--dropdown-list">
+										<li class="main-nav--dropdown-item">
+											<p class="isas" data-link-category="main_navigation_link" href="/stocks-and-shares-isa/isa-transfers" title="ISA transfers"><span>Transfer an ISA</span> Transfer an ISA and consolidate your investments with one provider.</p>
+										</li>
+									</ul>
+							</div>
+				</div>
+			</li>
+			<li class="main-nav--link grid__col-auto" data-dropdown="true">
+				<p class="main-nav--top-link inv-research" data-link-category="main_navigation_link" href="/research" title="Investment Research">Investment research</p>
+
+				<div class="main-nav--dropdown " style="display: none; left: auto;">
+							<div class="main-nav--dropdown-column">
+									<ul class="main-nav--dropdown-list">
+										<li class="main-nav--dropdown-item">
+											<p class="inv-research" data-link-category="main_navigation_link" href="/investment-search" title="/investment-search"><span>Investment search</span> Search and filter thousands of funds, ETFs, investment trusts and shares in a few clicks.</p>
+										</li>
+									</ul>
+									<ul class="main-nav--dropdown-list">
+										<li class="main-nav--dropdown-item">
+											<p class="inv-research" data-link-category="main_navigation_link" href="/research/spot-the-dog" title="Spot the Dog"><span>Spot the Dog</span> Find out which funds are underperforming in the latest edition of Spot the Dog.</p>
+										</li>
+									</ul>
+									<ul class="main-nav--dropdown-list">
+										<li class="main-nav--dropdown-item">
+											<p class="inv-research" data-link-category="main_navigation_link" href="/research/top-rated-funds" title="Top rated funds"><span>Top-rated funds</span> See our research team’s top-rated investment funds from all sectors and across the globe.</p>
+										</li>
+									</ul>
+									<ul class="main-nav--dropdown-list">
+										<li class="main-nav--dropdown-item">
+											<p class="inv-research" data-link-category="main_navigation_link" href="/research/top-performing-funds" title="Top performing funds"><span>Top-performing funds</span> Search the top-performing investment funds from each sector.</p>
+										</li>
+									</ul>
+							</div>
+							<div class="main-nav--dropdown-column">
+									<ul class="main-nav--dropdown-list">
+										<li class="main-nav--dropdown-item">
+											<p class="inv-research" data-link-category="main_navigation_link" href="/research/sector-insights" title="Sector insights"><span>Sector insights</span> The latest news, investment ideas and research insights from different sectors across the globe.</p>
+										</li>
+									</ul>
+									<ul class="main-nav--dropdown-list">
+										<li class="main-nav--dropdown-item">
+											<p class="inv-research" data-link-category="main_navigation_link" href="/research/vcts" title="VCTs"><span>VCTs</span> Venture Capital Trust current launches, offers, prospectuses, applications, and reviews.</p>
+										</li>
+									</ul>
+									<ul class="main-nav--dropdown-list">
+										<li class="main-nav--dropdown-item">
+											<p class="inv-research" data-link-category="main_navigation_link" href="/research/fund-rating-changes-and-launches" title="Fund rating changes and launches"><span>Fund rating changes and launches</span> New fund launches and changes to the star ratings from our expert research team.</p>
+										</li>
+									</ul>
+									<ul class="main-nav--dropdown-list">
+										<li class="main-nav--dropdown-item">
+											<p class="inv-research" data-link-category="main_navigation_link" href="/research/ethical-and-esg-investing" title="Ethical and ESG investing"><span>Ethical and ESG investing</span> Do you want to invest for your future but also make sure that your investments don’t compromise your values?</p>
+										</li>
+									</ul>
+							</div>
+				</div>
+			</li>
+			<li class="main-nav--link grid__col-auto" data-dropdown="true">
+				<p class="main-nav--top-link " data-link-category="main_navigation_link" href="#" title="#">Insights</p>
+
+				<div class="main-nav--dropdown lastNavItem" style="display: none;">
+							<div class="main-nav--dropdown-column">
+									<ul class="main-nav--dropdown-list">
+										<li class="main-nav--dropdown-item">
+											<p class="" data-link-category="main_navigation_link" href="" title="News"><span>News</span> </p>
+										</li>
+									</ul>
+									<ul class="main-nav--dropdown-list">
+										<li class="main-nav--dropdown-item">
+											<p class="" data-link-category="main_navigation_link" href="/guides" title="Guides"><span>Investment guides</span> </p>
+										</li>
+									</ul>
+									<ul class="main-nav--dropdown-list">
+										<li class="main-nav--dropdown-item">
+											<p class="" data-link-category="main_navigation_link" href="/events" title="Events"><span>Events</span> </p>
+										</li>
+									</ul>
+									<ul class="main-nav--dropdown-list">
+										<li class="main-nav--dropdown-item">
+											<p class="" data-link-category="main_navigation_link" href="/how-to-invest" title="How to invest"><span>Investing 101</span> </p>
+										</li>
+									</ul>
+							</div>
+				</div>
+			</li>
+			</ul>
+</section>
+
+</header>
+	
+	<section role="main" id="content">
+		
+
+<section class="subpage-header subpage-header__news">
+	<section class="header-breadcrumb">
+		
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+      <ol class="breadcrumb header-breadcrumb--list" data-location-description="Breadcrumbs">
+            <li class="header-breadcrumb--item"><p data-link-category="breadcrumb_link" href="/" title="Home">Home</p></li>
+            <li class="header-breadcrumb--item active">News</li>
+      </ol>
+    </div>
+  </div>
+</div>
+	</section>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-9">
+				<h1 class="subpage-header--heading">
+					Investment news
+				</h1>
+					<p class="subpage-header--subheading">
+						Stay up to date with the latest news, research and investment ideas from our experts.
+					</p>
+			</div>
+			
+		</div>
+	</div>
+</section>
+
+<section class="index-page index-page__flexbox-padding-half news-index">
+	<div class="container">
+		<div class="row row__padding-half">
+			<div class="col-md-9">
+				<div class="row row__padding-half">
+					<div class="grid grid__padding-half">
+							<div class="grid__col-md-12">
+								<div class="featured-image grid">
+										<div class="featured-image__image grid__col-sm-6">
+											<img alt="" src="tesla.jpg">
+										</div>
+									<div class="featured-image__content grid__col-sm-6">
+										<h3>Where did our clients invest last month?</h3>
+										<p>With the numbers climbing higher and higher and local lockdowns taking over large parts of the UK, where did investors place their cash? The funds below have done well, but you should always keep in mind that investments go down as well as up and you may not get back the amount invested. Remember the golden rule: a fund’s past performance is not necessarily a guide to future performance.</p>
+										<span class="featured-image__content-category">
+											Investing
+												<br>
+												<span>6 minute read</span>
+										</span>
+									</div>
+									<p class="featured-image--hover" href="/news/where-did-our-clients-invest-in-september-2020" title="Where did our clients invest last month?"></p>
+								</div>
+							</div>
+
+							<div class="grid__col-md-3">
+								<div class="vertical-card">
+										<div class="vertical-card--image-container">
+											<img alt="" class="vertical-card--image" src="podcast-article-ep32.jpg">
+										</div>
+									<p href="#" class="vertical-card--content-link">
+										<div class="vertical-card--content">
+											<h4 class="vertical-card--header">The Tilney Investment Podcast – what’s behind the US equities sell-off?</h4>
+										</div>
+										<span class="vertical-card--category">
+											Podcasts
+												<br>
+												<span>
+													1 minute read
+												</span>
+										</span>
+									</p>
+									<p class="vertical-card--hover-link" href="/news/the-tilney-investment-podcast-what-s-behind-the-us-equities-sell-off" title="The Tilney Investment Podcast – what’s behind the US equities sell-off?"></p>
+								</div>
+							</div>
+							<div class="grid__col-md-3">
+								<div class="vertical-card">
+										<div class="vertical-card--image-container">
+											<img alt="" class="vertical-card--image" src="25-balloons-in-the-sky.jpg">
+										</div>
+									<p href="#" class="vertical-card--content-link">
+										<div class="vertical-card--content">
+											<h4 class="vertical-card--header">Then and now: here’s how Venture Capital Trusts have evolved</h4>
+										</div>
+										<span class="vertical-card--category">
+											Investing
+												<br>
+												<span>
+													8 minute read
+												</span>
+										</span>
+									</p>
+									<p class="vertical-card--hover-link" href="/news/then-and-now-here-s-how-venture-capital-trusts-have-evolved" title="Then and now: here’s how Venture Capital Trusts have evolved"></p>
+								</div>
+							</div>
+							<div class="grid__col-md-3">
+								<div class="vertical-card">
+										<div class="vertical-card--image-container">
+											<img alt="" class="vertical-card--image" src="aerial-view-of-thick-forest-in-autumn.jpg">
+										</div>
+									<p href="#" class="vertical-card--content-link">
+										<div class="vertical-card--content">
+											<h4 class="vertical-card--header">How to avoid breaching the lifetime allowance</h4>
+										</div>
+										<span class="vertical-card--category">
+											Pensions and retirement
+												<br>
+												<span>
+													4 minute read
+												</span>
+										</span>
+									</p>
+									<p class="vertical-card--hover-link" href="/news/how-to-avoid-breaching-the-lifetime-allowance" title="How to avoid breaching the lifetime allowance"></p>
+								</div>
+							</div>
+							<div class="grid__col-md-3">
+								<div class="vertical-card">
+										<div class="vertical-card--image-container">
+											<img alt="" class="vertical-card--image" src="apple-logo-market-comm.jpg">
+										</div>
+									<p href="#" class="vertical-card--content-link">
+										<div class="vertical-card--content">
+											<h4 class="vertical-card--header">August market update – best August for global equity markets since 1986</h4>
+										</div>
+										<span class="vertical-card--category">
+											Market news
+												<br>
+												<span>
+													1 minute read
+												</span>
+										</span>
+									</p>
+									<p class="vertical-card--hover-link" href="/news/pugust-market-update-best-august-for-global-equity-markets-since-1986" title="August market update – best August for global equity markets since 1986"></p>
+								</div>
+							</div>
+							<div class="grid__col-md-3">
+								<div class="vertical-card">
+										<div class="vertical-card--image-container">
+											<img alt="" class="vertical-card--image" src="apple.jpg">
+										</div>
+									<p href="#" class="vertical-card--content-link">
+										<div class="vertical-card--content">
+											<h4 class="vertical-card--header">Where did our clients invest last month?</h4>
+										</div>
+										<span class="vertical-card--category">
+											Investing
+												<br>
+												<span>
+													6 minute read
+												</span>
+										</span>
+									</p>
+									<p class="vertical-card--hover-link" href="/news/where-did-our-clients-invest-in-august-2020" title="Where did our clients invest last month?"></p>
+								</div>
+							</div>
+							<div class="grid__col-md-3">
+								<div class="vertical-card">
+										<div class="vertical-card--image-container">
+											<img alt="" class="vertical-card--image" src="podcast-article-ep18.jpg">
+										</div>
+									<p href="#" class="vertical-card--content-link">
+										<div class="vertical-card--content">
+											<h4 class="vertical-card--header">The Tilney Investment Podcast – UK GDP falls by over 20%: the outlook for the economy</h4>
+										</div>
+										<span class="vertical-card--category">
+											Podcasts
+												<br>
+												<span>
+													1 minute read
+												</span>
+										</span>
+									</p>
+									<p class="vertical-card--hover-link" href="/news/the-tilney-investment-podcast-uk-gdp-falls-by-over-20-the-outlook-for-the-economy" title="The Tilney Investment Podcast – UK GDP falls by over 20%: the outlook for the economy"></p>
+								</div>
+							</div>
+
+						<div class="grid__col-md-6">
+
+								<div class="horizontal-card">
+									<p href="/news/pre-you-making-the-most-of-your-202021-tax-allowances" class="horizontal-card--content-link">
+										<h5 class="horizontal-card--header">Are you making the most of your 2020/21 tax allowances?</h5>
+										<span class="horizontal-card--category">
+											Financial planning
+												<br>
+												<span>
+													4 minute read
+												</span>
+										</span>
+									</p>
+									<p class="horizontal-card--hover-link" href="/news/pre-you-making-the-most-of-your-202021-tax-allowances" title="Are you making the most of your 2020/21 tax allowances?"></p>
+								</div>
+								<div class="horizontal-card">
+									<p href="/news/july-market-update-the-us-dollar-was-notably-weaker-over-july" class="horizontal-card--content-link">
+										<h5 class="horizontal-card--header">July market update – the US dollar was notably weaker over July</h5>
+										<span class="horizontal-card--category">
+											Market news
+												<br>
+												<span>
+													1 minute read
+												</span>
+										</span>
+									</p>
+									<p class="horizontal-card--hover-link" href="/news/july-market-update-the-us-dollar-was-notably-weaker-over-july" title="July market update – the US dollar was notably weaker over July"></p>
+								</div>
+								<div class="horizontal-card">
+									<p href="/news/where-did-our-clients-invest-in-july-2020" class="horizontal-card--content-link">
+										<h5 class="horizontal-card--header">Where did our clients invest last month?</h5>
+										<span class="horizontal-card--category">
+											Investing
+												<br>
+												<span>
+													5 minute read
+												</span>
+										</span>
+									</p>
+									<p class="horizontal-card--hover-link" href="/news/where-did-our-clients-invest-in-july-2020" title="Where did our clients invest last month?"></p>
+								</div>
+						</div>
+						<div class="grid__col-md-6">
+							<h2 class="news-index--categories-header">Market news</h2>
+
+									<div class="horizontal-card">
+										<p href="/news/july-market-pulse-economic-growth-recovers-despite-the-resurgence-of-covid-19-infections" class="horizontal-card--content-link">
+											<h5 class="horizontal-card--header">July Market Pulse – economic growth recovers despite the resurgence of Covid-19 infections</h5>
+											<span class="horizontal-card--category">
+												Market news
+													<br>
+													<span>
+														11 minute read
+													</span>
+											</span>
+										</p>
+										<p class="horizontal-card--hover-link" href="/news/july-market-pulse-economic-growth-recovers-despite-the-resurgence-of-covid-19-infections" title="July Market Pulse – economic growth recovers despite the resurgence of Covid-19 infections"></p>
+									</div>
+									<div class="horizontal-card">
+										<p href="/news/june-market-update-the-price-of-gold-climbs-to-a-7-year-high" class="horizontal-card--content-link">
+											<h5 class="horizontal-card--header">June market update – the price of gold climbs to a 7-year high</h5>
+											<span class="horizontal-card--category">
+												Market news
+													<br>
+													<span>
+														1 minute read
+													</span>
+											</span>
+										</p>
+										<p class="horizontal-card--hover-link" href="/news/june-market-update-the-price-of-gold-climbs-to-a-7-year-high" title="June market update – the price of gold climbs to a 7-year high"></p>
+									</div>
+									<div class="horizontal-card">
+										<p href="/news/june-market-pulse-central-banks-respond-to-the-pandemic-emergency" class="horizontal-card--content-link">
+											<h5 class="horizontal-card--header">June Market Pulse – central banks respond to the pandemic emergency</h5>
+											<span class="horizontal-card--category">
+												Market news
+													<br>
+													<span>
+														14 minute read
+													</span>
+											</span>
+										</p>
+										<p class="horizontal-card--hover-link" href="/news/june-market-pulse-central-banks-respond-to-the-pandemic-emergency" title="June Market Pulse – central banks respond to the pandemic emergency"></p>
+									</div>
+						</div>
+						<div class="grid__col-md-6">
+							<h2 class="news-index--categories-header">Investing</h2>
+									<div class="horizontal-card">
+										<p href="/news/the-case-for-staying-invested-over-the-long-term" class="horizontal-card--content-link">
+											<h5 class="horizontal-card--header">The case for staying invested over the long term</h5>
+											<span class="horizontal-card--category">
+												Investing
+													<br>
+													<span>
+														8 minute read
+													</span>
+											</span>
+										</p>
+										<p class="horizontal-card--hover-link" href="/news/the-case-for-staying-invested-over-the-long-term" title="The case for staying invested over the long term"></p>
+									</div>
+									<div class="horizontal-card">
+										<p href="/news/where-did-our-clients-invest-in-june-2020" class="horizontal-card--content-link">
+											<h5 class="horizontal-card--header">Where did our clients invest last month?</h5>
+											<span class="horizontal-card--category">
+												Investing
+													<br>
+													<span>
+														5 minute read
+													</span>
+											</span>
+										</p>
+										<p class="horizontal-card--hover-link" href="/news/where-did-our-clients-invest-in-june-2020" title="Where did our clients invest last month?"></p>
+									</div>
+									<div class="horizontal-card">
+										<p href="/news/if-you-re-saving-money-during-lockdown-how-about-investing-some" class="horizontal-card--content-link">
+											<h5 class="horizontal-card--header">If you’re saving money during lockdown, how about investing some?</h5>
+											<span class="horizontal-card--category">
+												Investing
+													<br>
+													<span>
+														3 minute read
+													</span>
+											</span>
+										</p>
+										<p class="horizontal-card--hover-link" href="/news/if-you-re-saving-money-during-lockdown-how-about-investing-some" title="If you’re saving money during lockdown, how about investing some?"></p>
+									</div>
+						</div>
+							<div class="grid__col-xs-12">
+								
+
+							</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-3">
+				<div class="index-page--right-hand index-page--right-hand__padding-half">
+					
+
+<div>
+
+
+<div class="newsletter">
+	<header>
+		<h3>Newsletter signup</h3>
+		<i class="fa fa-newsletter"></i>
+	</header>
+
+	<div id="newsletter-signup-thanks" style="display:none">
+		<p><span>You will now receive our latest news and research delivered straight to your inbox.</span></p>
+	</div>
+
+<form action="/news" data-form-type="newsletter_sign_up" enctype="multipart/form-data" id="newsletter-signup" method="post" style="display:block" novalidate="novalidate"><input name="__RequestVerificationToken" type="hidden" value="rwwDz9Os2CfxTSAbDxbFOUa-HBmUv0ZfGgksGridA0uErs_swbKgKo7xcyzTfdVUfStTFYu_nt6Ftql0rdUxTYFGtYw1"><input id="watid" name="watid" type="hidden" value="04CC89B3-F774-4AB4-A51E-D84237A03A47"><input id="NotificationTypeId" name="NotificationTypeId" type="hidden" value="0d02016a-7aa2-4bd5-8f44-eca3f6836b53"><p class="global-form--text"><span>To subscribe to the newsletter please fill in your details below:</span></p>		<div class="form-group">
+			<label for="EmailAddress">Email address</label>
+			<input class="global-form--textbox form-control" data-placement="right" data-toggle="tooltip" data-val="true" data-val-email="The EmailAddress field is not a valid e-mail address." data-val-required="The EmailAddress field is required." id="EmailAddress" name="EmailAddress" placeholder="e.g. john.smith@email.co.uk" title="" type="email" value="" data-original-title="">
+			<span class="field-validation-valid" data-valmsg-for="EmailAddress" data-valmsg-replace="true"></span>
+		</div>
+<p class="global-form--text"><span>By clicking the following button you are agreeing to our </span><p data-id="6370" href="/help/website-conditions" title="Website conditions" data-ga-link-tracking="false">website conditions</p><span>.</span></p>		<button type="submit" class="btn btn__form btn-primary">
+			Sign up
+		</button>
+<input name="ufprt" type="hidden" value="5D86AAFC48E392A3F37632F5A8429E75BE13128C7B0C23F898C002265A3B988EA46BF4C930F910506D969E073AEE28F79034806FCD5B82777794899A3D28321E6D3C7E89E3F555B56D1BF232998A7C6761117222ED518E91C9FAADF3B85DFBFDC0AD8B498D650B92F60094220E4741630F6E63E75E5ECCD1979C6F70D563616587F535FB694AE9D7A1DBADF305D0D83A9017973B3BC3E277EB540EBE7615D65C30818368"></form></div>
+
+
+<div class="twitter">
+  <header>
+    <h3>
+      Latest tweets
+    </h3>
+    <i class="fa fa-twitter"></i>
+  </header>
+
+  <div class="twitter__container">
+      <div class="twitter__inner">
+        <p  class="twitter__header" target="_blank">Bestinvest</p>
+        <span class="twitter__info">
+ 
+          3d
+        </span>
+        <p class="twitter__text">
+          Whether you’re in your thirties or approaching retirement, this article about pension allowances and reliefs can help you understand what is available. 
+
+#Bestinvest #FinancialPlanning #Pensions #Investments #TaxAllowance #TaxRelief
+        </p>
+      </div>
+      <div class="twitter__inner">
+        <p class="twitter__header" target="_blank">Bestinvest</p>
+        <span class="twitter__info">
+        
+          4d
+        </span>
+        <p class="twitter__text">
+          The latest Spot the Dog is ready and waiting. Why not take him for a walk? Download now.
+
+
+#SpotTheDog #DogHouse #Bestinvest #Dogs #Retirement #Pensions #FinancialPlanning #FinancialAdvisers #Investing
+        </p>
+      </div>
+      <div class="twitter__inner">
+        <p  class="twitter__header" target="_blank">Bestinvest</p>
+        <span class="twitter__info">
+     
+          5d
+        </span>
+        <p class="twitter__text">
+          Our Ready-made Portfolios give you an easy way into the investment world. Discover more on the website. 
+
+
+#Invest #ReadyMadePortfolio
+        </p>
+      </div>
+      <div class="twitter__inner">
+        <p class="twitter__header" target="_blank">Bestinvest</p>
+        <span class="twitter__info">
+          <p  class="twitter__handle" target="_blank">@bestinvest</p>
+          6d
+        </span>
+        <p class="twitter__text">
+          Shift your pension into gear. Good pension investments with a good home are key for making the most of your allowances and your money. 
+
+#investments #pension
+        </p>
+      </div>
+      <div class="twitter__inner">
+        <p class="twitter__header" target="_blank">Bestinvest</p>
+        <span class="twitter__info">
+   
+          6d
+        </span>
+        <p class="twitter__text">
+          Find out Our Top-rated Funds guide. 
+
+
+#TopRatedFunds #Investing #Bestinvest #Retirement #Pensions #FinancialPlanning #FinancialAdvisers
+        </p>
+      </div>
+      <div class="twitter__inner">
+        <p class="twitter__header" target="_blank">Bestinvest</p>
+        <span class="twitter__info">
+      
+          7d
+        </span>
+        <p class="twitter__text">
+          Our Ready-made Portfolios give you an easy way into the investment world. Discover more on the website. 
+
+
+#Invest #ReadyMadePortfolio
+        </p>
+      </div>
+      <div class="twitter__inner">
+        <p href="twitter.com/bestinvest/status/1311289778239832065" class="twitter__header" target="_blank">Bestinvest</p>
+        <span class="twitter__info">
+          <p href="twitter.com/bestinvest/status/1311289778239832065" class="twitter__handle" target="_blank">@bestinvest</p>
+          9d
+        </span>
+        <p class="twitter__text">
+          Find out how a financial planner can put numbers into context during divorce to understand the real life implications of decisions. 
+
+
+#financialplanning #divorce
+        </p>
+      </div>
+  
+  </div>
+
+  <footer>
+  	
+
+  	Follow
+
+  </footer>
+</div>
+</div>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+	</section>
+
+	
+
+	
+	
+<footer id="site-footer" data-location-description="Footer">
+  <section class="risk-warning">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <p>The value of your investment can go down as well as up, and you can get back less than you originally invested.</p>
+<p>Past performance or any yields quoted should not be considered reliable indicators of future returns. Restricted advice can be provided as part of other services offered by Bestinvest, upon request and on a fee basis. Before investing in funds please check the specific risk factors on the key features document or refer to our risk warning notice as some funds can be high risk or complex; they may also have risks relating to the geographical area, industry sector and/or underlying assets in which they invest. Prevailing tax rates and relief are dependent on your individual circumstances and are subject to change.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="footer-nav">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-3">
+          <div class="footer-nav--address">
+            
+
+          </div>
+
+              <h4 class="footer-nav--header">Connect with us
+              </h4>
+	
+        </div>
+        <div class="col-md-9">
+          <div class="visible-xs">
+            <div class="panel-group footer-nav--mobile-accordion" id="footer-nav-accordion" role="tablist" aria-multiselectable="true">
+
+                      <div class="panel">
+                    <div class="panel-heading" role="tab" id="footerHeading1">
+                      <h4 class="panel-title">
+                        <p role="button" data-toggle="collapse" data-parent="#footer-nav-accordion" href="#footerPanel1" aria-expanded="false" aria-controls="footerPanel1" rel="nofollow">
+                          Our services
+                        </p>
+                      </h4>
+                    </div>
+                    <div id="footerPanel1" class="panel-collapse collapse" role="tabpanel" aria-labelledby="footerHeading1">
+                      <div class="panel-body">
+                        <ul class="footer-nav--links">
+                            <li>
+                              <p data-link-category="footer_link" href="/our-service" title="Our service">Online investment service</p>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                      <div class="panel">
+                    <div class="panel-heading" role="tab" id="footerHeading2">
+                      <h4 class="panel-title">
+                        <p role="button" data-toggle="collapse" data-parent="#footer-nav-accordion" href="#footerPanel2" aria-expanded="false" aria-controls="footerPanel2" rel="nofollow">
+                          Our accounts
+                        </p>
+                      </h4>
+                    </div>
+                    <div id="footerPanel2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="footerHeading2">
+                      <div class="panel-body">
+                        <ul class="footer-nav--links">
+                            <li>
+                              <p data-link-category="footer_link" href="/pensions/sipps" title="SIPPs">SIPPs</p>
+                            </li>
+                            <li>
+                              <p data-link-category="footer_link" href="/stocks-and-shares-isa" title="Stocks and Shares ISA">Stocks and Shares ISA</p>
+                            </li>
+                            <li>
+                              <p data-link-category="footer_link" href="/our-service/investment-account" title="Investment Account">Investment Account</p>
+                            </li>
+                            <li>
+                              <p data-link-category="footer_link" href="/stocks-and-shares-isa/junior-isa" title="Junior ISA">Junior ISA</p>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                      <div class="panel">
+                    <div class="panel-heading" role="tab" id="footerHeading3">
+                      <h4 class="panel-title">
+                        <p role="button" data-toggle="collapse" data-parent="#footer-nav-accordion" href="#footerPanel3" aria-expanded="false" aria-controls="footerPanel3" rel="nofollow">
+                          Investment research
+                        </p>
+                      </h4>
+                    </div>
+                    <div id="footerPanel3" class="panel-collapse collapse" role="tabpanel" aria-labelledby="footerHeading3">
+                      <div class="panel-body">
+                        <ul class="footer-nav--links">
+                            <li>
+                              <p data-link-category="footer_link" href="select.bestinvest.co.uk/investmentselector" target="_blank" title="select.bestinvest.co.uk/investmentselector">Search investments</p>
+                            </li>
+                            <li>
+                              <p data-link-category="footer_link" href="/research/fund-rating-changes-and-launches" title="Fund rating changes and launches">Fund changes and launches</p>
+                            </li>
+                            <li>
+                              <p data-link-category="footer_link" href="/research/vcts/current-launches" title="Current launches">Current VCT launches</p>
+                            </li>
+                            <li>
+                              <p data-link-category="footer_link" href="/research/spot-the-dog" title="Spot the Dog">Spot the Dog</p>
+                            </li>
+                            <li>
+                              <p data-link-category="footer_link" href="/research/top-rated-funds" title="Top rated funds">Our top-rated funds</p>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                      <div class="panel">
+                    <div class="panel-heading" role="tab" id="footerHeading4">
+                      <h4 class="panel-title">
+                        <p role="button" data-toggle="collapse" data-parent="#footer-nav-accordion" href="#footerPanel4" aria-expanded="false" aria-controls="footerPanel4" rel="nofollow">
+                          Compliance
+                        </p>
+                      </h4>
+                    </div>
+                    <div id="footerPanel4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="footerHeading4">
+                      <div class="panel-body">
+                        <ul class="footer-nav--links">
+                            <li>
+                              <p data-link-category="footer_link" href="/help/website-conditions" title="Website conditions">Website conditions</p>
+                            </li>
+                            <li>
+                              <p data-link-category="footer_link" href="/help/cookie-policy" title="Cookie policy">Cookie policy</p>
+                            </li>
+                            <li>
+                              <p data-link-category="footer_link" href="/help/privacy-notice" title="Privacy notice">Privacy notice</p>
+                            </li>
+                            <li>
+                              <p data-link-category="footer_link" href="/help/pccessibility" title="Accessibility">Accessibility</p>
+                            </li>
+                            <li>
+                              <p data-link-category="footer_link" href="/help/terms-of-business-service-and-costs" title="Terms of business &amp; service and costs">Key facts and terms of business</p>
+                            </li>
+                            <li>
+                              <p data-link-category="footer_link" href="/help/risk-warnings" title="Risk warnings">Risk warnings</p>
+                            </li>
+                            <li>
+                              <p data-link-category="footer_link" href="/help/registered-details" title="Registered details">Registered details</p>
+                            </li>
+                            <li>
+                              <p data-link-category="footer_link" href="/help/best-execution" title="Best execution">Best execution</p>
+                            </li>
+                            <li>
+                              <p data-link-category="footer_link" href="/media/3036/slavery-and-human-trafficking-statement-2019.pdf" title="Slavery And Human Trafficking Statement 2019">Modern Slavery Act</p>
+                            </li>
+                            <li>
+                              <p data-link-category="footer_link" href="/media/3033/tilney-pillar-3-disclosures-2020.pdf" title="Tilney Pillar 3 Disclosures 2020">Capital Requirements Directive</p>
+                            </li>
+                            <li>
+                              <p data-link-category="footer_link" href="/media/3035/tilneys-gender-pay-gap-report-2019.pdf" title="Tilneys Gender Pay Gap Report 2019">Tilney's gender pay gap report</p>
+                            </li>
+                            <li>
+                              <p data-link-category="footer_link" href="/media/2453/tax-policy-tilney-group.pdf" title="Tilney tax strategy">Tilney's tax strategy</p>
+                            </li>
+                            <li>
+                              <p data-link-category="footer_link" href="/help/shareholders-rights-directive" title="Shareholders Rights Directive">Shareholder Rights Directive II (SRD II) - Engagement Policy</p>
+                            </li>
+                            <li>
+                              <p data-link-category="footer_link" href="/keeping-you-safe" title="Keeping you safe">Keeping your account secure</p>
+                            </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+            </div>
+          </div>
+          <div class="hidden-xs">
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                  <h4 class="footer-nav--header">Our services
+                  </h4>
+                  <ul class="footer-nav--links">
+                      <li>
+                        <p data-link-category="footer_link" href="/our-service" title="Our service">Online investment service</p>
+                      </li>
+                  </ul>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <h4 class="footer-nav--header">Our accounts
+                  </h4>
+                  <ul class="footer-nav--links">
+                      <li>
+                        <p data-link-category="footer_link" href="/pensions/sipps" title="SIPPs">SIPPs</p>
+                      </li>
+                      <li>
+                        <p data-link-category="footer_link" href="/stocks-and-shares-isa" title="Stocks and Shares ISA">Stocks and Shares ISA</p>
+                      </li>
+                      <li>
+                        <p data-link-category="footer_link" href="/our-service/investment-account" title="Investment Account">Investment Account</p>
+                      </li>
+                      <li>
+                        <p data-link-category="footer_link" href="/stocks-and-shares-isa/junior-isa" title="Junior ISA">Junior ISA</p>
+                      </li>
+                  </ul>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <h4 class="footer-nav--header">Investment research
+                  </h4>
+                  <ul class="footer-nav--links">
+                      <li>
+                        <p data-link-category="footer_link" href="select.bestinvest.co.uk/investmentselector" target="_blank" title="select.bestinvest.co.uk/investmentselector">Search investments</p>
+                      </li>
+                      <li>
+                        <p data-link-category="footer_link" href="/research/fund-rating-changes-and-launches" title="Fund rating changes and launches">Fund changes and launches</p>
+                      </li>
+                      <li>
+                        <p data-link-category="footer_link" href="/research/vcts/current-launches" title="Current launches">Current VCT launches</p>
+                      </li>
+                      <li>
+                        <p data-link-category="footer_link" href="/research/spot-the-dog" title="Spot the Dog">Spot the Dog</p>
+                      </li>
+                      <li>
+                        <p data-link-category="footer_link" href="/research/top-rated-funds" title="Top rated funds">Our top-rated funds</p>
+                      </li>
+                  </ul>
+                </div>
+                <div class="col-sm-6 col-md-4">
+                  <h4 class="footer-nav--header">Compliance
+                  </h4>
+                  <ul class="footer-nav--links">
+                      <li>
+                        <p data-link-category="footer_link" href="/help/website-conditions" title="Website conditions">Website conditions</p>
+                      </li>
+                      <li>
+                        <p data-link-category="footer_link" href="/help/cookie-policy" title="Cookie policy">Cookie policy</p>
+                      </li>
+                      <li>
+                        <p data-link-category="footer_link" href="/help/privacy-notice" title="Privacy notice">Privacy notice</p>
+                      </li>
+                      <li>
+                        <p data-link-category="footer_link" href="/help/pccessibility" title="Accessibility">Accessibility</p>
+                      </li>
+                      <li>
+                        <p data-link-category="footer_link" href="/help/terms-of-business-service-and-costs" title="Terms of business &amp; service and costs">Key facts and terms of business</p>
+                      </li>
+                      <li>
+                        <p data-link-category="footer_link" href="/help/risk-warnings" title="Risk warnings">Risk warnings</p>
+                      </li>
+                      <li>
+                        <p data-link-category="footer_link" href="/help/registered-details" title="Registered details">Registered details</p>
+                      </li>
+                      <li>
+                        <p data-link-category="footer_link" href="/help/best-execution" title="Best execution">Best execution</p>
+                      </li>
+                      <li>
+                        <p data-link-category="footer_link" href="/media/3036/slavery-and-human-trafficking-statement-2019.pdf" title="Slavery And Human Trafficking Statement 2019">Modern Slavery Act</p>
+                      </li>
+                      <li>
+                        <p data-link-category="footer_link" href="/media/3033/tilney-pillar-3-disclosures-2020.pdf" title="Tilney Pillar 3 Disclosures 2020">Capital Requirements Directive</p>
+                      </li>
+                      <li>
+                        <p data-link-category="footer_link" href="/media/3035/tilneys-gender-pay-gap-report-2019.pdf" title="Tilneys Gender Pay Gap Report 2019">Tilney's gender pay gap report</p>
+                      </li>
+                      <li>
+                        <p data-link-category="footer_link" href="/media/2453/tax-policy-tilney-group.pdf" title="Tilney tax strategy">Tilney's tax strategy</p>
+                      </li>
+                      <li>
+                        <p data-link-category="footer_link" href="/help/shareholders-rights-directive" title="Shareholders Rights Directive">Shareholder Rights Directive II (SRD II) - Engagement Policy</p>
+                      </li>
+                      <li>
+                        <p data-link-category="footer_link" href="/keeping-you-safe" title="Keeping you safe">Keeping your account secure</p>
+                      </li>
+                  </ul>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="legal">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <p>Issued by Tilney Investment Management Services Limited, (Reg. No: 2830297), which is authorised and regulated by the Financial Conduct Authority. Financial services are provided by Tilney Investment Management Services Limited and other companies in the Tilney Smith &amp; Williamson Group, further details of which are <p data-udi="umb://document/0f0430a268fc46f0bf9b8dc524bc19cc" href="/help/registered-details" title="Registered details">available here</p>. This site is for UK investors only. © Tilney Smith &amp; Williamson Limited 2020.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</footer>
+
+
+	
+	
+
+
+	<div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all"></div>
+	
+	
+
+
+
+<ppp-content ng-version="10.1.2" data-scrapbook-shadowroot="{&quot;data&quot;:&quot;<style>/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0}main{display:block}h1{font-size:2em;margin:.67em 0}hr{box-sizing:content-box;height:0;overflow:visible}pre{font-family:monospace,monospace;font-size:1em}a{background-color:transparent}abbr[title]{border-bottom:none;text-decoration:underline;-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:bolder}code,kbd,samp{font-family:monospace,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,input{overflow:visible}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{padding:.35em .75em .625em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}progress{vertical-align:baseline}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}details{display:block}summary{display:list-item}[hidden],template{display:none}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}button{background-color:transparent;background-image:none;padding:0}button:focus{outline:1px dotted;outline:5px auto -webkit-focus-ring-color}fieldset,ol,ul{margin:0;padding:0}ol,ul{list-style:none}html{font-family:system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;line-height:1.5}*,:after,:before{box-sizing:border-box;border:0 solid #eee}hr{border-top-width:1px}img{border-style:solid}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{color:#a0aec0}input::-webkit-input-placeholder,textarea::-webkit-input-placeholder{color:#a0aec0}input::-ms-input-placeholder,textarea::-ms-input-placeholder{color:#a0aec0}input::placeholder,textarea::placeholder{color:#a0aec0}[role=button],button{cursor:pointer}table{border-collapse:collapse}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}button,input,optgroup,select,textarea{padding:0;line-height:inherit;color:inherit}code,kbd,pre,samp{font-family:SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}.container{width:100%}@media (min-width:480px){.container{max-width:480px}}@media (min-width:720px){.container{max-width:720px}}@media (min-width:960px){.container{max-width:960px}}@media (min-width:1200px){.container{max-width:1200px}}.pulse{-webkit-animation:pulse 2s infinite;animation:pulse 2s infinite}@-webkit-keyframes pulse{0%{-webkit-box-shadow:0 0 0 0 rgba(255,214,0,.4)}to{-webkit-box-shadow:0 0 0 20px rgba(255,214,0,0)}}</style><!---->&quot;,&quot;mode&quot;:&quot;open&quot;}"></ppp-content><link rel="stylesheet" href="woff2.css" media="all"><div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon906088425320"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon725158378287" width="0" height="0" alt="" src="0"></div></body>
+<script data-scrapbook-elem="basic-loader">(function () { var k1 = "data-scrapbook-shadowroot", k2 = "data-scrapbook-input-indeterminate", k3 = "data-scrapbook-canvas", fn = function (r) { var E = r.querySelectorAll ? r.querySelectorAll("*") : r.getElementsByTagName("*"), i = E.length, e, d, s; while (i--) { e = E[i]; if (e.hasAttribute(k1) && !e.shadowRoot && e.attachShadow) { d = JSON.parse(e.getAttribute(k1)); s = e.attachShadow({mode: d.mode}); s.innerHTML = d.data; e.removeAttribute(k1); } if (e.shadowRoot) { fn(e.shadowRoot); } if (e.hasAttribute(k2)) { e.indeterminate = true; e.removeAttribute(k2); } if (e.hasAttribute(k3)) { (function () { var c = e, g = new Image(); g.onload = function () { c.getContext('2d').drawImage(g, 0, 0); }; g.src = c.getAttribute(k3); c.removeAttribute(k3); })(); } } }; fn(document); })()</script></html>
